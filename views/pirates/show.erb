@@ -8,5 +8,14 @@
 
 <h2>Display your first ship here</h2>
 
+<% @ships.each.with_index do |ship| %>
+  <div class="ship">
+    
+    <p>Name: <%= ship.name%></p><br>
+    <p>Type: <%= ship.type %></p><br>
+    <p>Booty: <%= ship.booty %></p><br>
+  
+  <% end %>
+
 
 <h2>Display your second ship here</h2>
