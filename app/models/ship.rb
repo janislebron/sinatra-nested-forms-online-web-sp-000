@@ -11,10 +11,10 @@ class Ship
   end 
   
   def self.all 
-    @@all 
+    SHIPS.all
   end
   
   def self.clear
-    @@all
+    SHIPS.clear
   end
 end
