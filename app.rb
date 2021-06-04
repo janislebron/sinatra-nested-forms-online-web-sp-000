@@ -8,7 +8,8 @@ module FormsLab
     get '/' do 
     end
     
-    post '/'
+    post '/' do
+    end
 
   end
 end
