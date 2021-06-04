@@ -8,13 +8,13 @@ module FormsLab
     get '/' do
       erb :root
     end
-    
-    get '/new' do 
+
+    get '/new' do
       erb :'pirates/new'
     end
-    
+
     post "/pirates" do
-       @pirate = Pirate.new(params[:pirate])
+      @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |details|
         Ship.new(details)
