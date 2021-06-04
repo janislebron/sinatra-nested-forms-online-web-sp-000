@@ -5,7 +5,8 @@ module FormsLab
 
     # code other routes/actions here
     
-    get '/' do 
+    get '/' do
+      erb :new
     end
     
     post '/' do
