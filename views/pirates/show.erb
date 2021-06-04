@@ -20,9 +20,9 @@
 
 <h2>Display your second ship here</h2>
 
-<% @ships.each.with_index do |ship, index| %>
+<% @ships.each do |ship| %>
   <div class="ship">
-    <% if index == 1 %>
+   
     <p>Name: <%= ship.name %></p><br>
     <p>Type: <%= ship.type %></p><br>
     <p>Booty: <%= ship.booty %></p><br>
